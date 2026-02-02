@@ -11,14 +11,23 @@
 <body id="bdy">
 
     <div class="gra">
-        
         <input type="color" id="bg1">
         <input type="color" id="bg2">
         <select name="" id="tovalue">
-            <option value="right">Right</option>
-            <option value="left">Left</option>
-            <option value="top">Top</option>
-            <option value="bottom">Bottom</option>
+            
+            <optgroup label="horizontal or vertical">
+                <option value="right">Right</option>
+                <option value="left">Left</option>
+                <option value="top">Top</option>
+                <option value="bottom">Bottom</option>
+            </optgroup>
+            <optgroup label="diagonal">
+                <option value="right top">Right-Top</option>
+                <option value="right bottom">Right-Bottom</option>
+                <option value="left top">Left-Top</option>
+                <option value="left bottom">Left-Bottom</option>
+            </optgroup>
+            <option value="" selected></option>
         </select>
         <button onclick="bgchange()">Go</button>
     </div>
@@ -31,7 +40,7 @@
         <button onclick="decre()">-</button>
         <button onclick="re()">reset</button>
     </div>
-    
+
     <script src="./js/script.js"></script>
 </body>
 

@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Content Example</title>
+</head>
+
+<body>
+    <h1>JavaScript textContent Example</h1>
+
+   
+    <p id="demoParagraph">This is the original text content.</p>
+
+   
+    <button onclick="changeTextContent()">Change Text</button>
+
+    
+    <script src="script.js"></script>
+</body>
+
+<script>
+    function changeTextContent() {
+        // 1. Get the element by its ID
+        const paragraphElement = document.getElementById("demoParagraph");
+
+        // 2. Set the new text content
+        paragraphElement.textContent = "The text has been changed by JavaScript!";
+
+        // Optional: Log the new content to the console
+        console.log("New content:", paragraphElement.textContent);
+    }
+</script>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Differences between innerText and textContent.
+  </title>
+</head>
+<body>
+  <h3>Differences between innerText & textContent.</h3>
+  <p id="demo"> This element has extra       spacing and contains 
+<span>a span element</span>.</p>
+
+  <button onclick="getInnerText()">Get innerText</button>
+  <button onclick="getTextContent()">Get textContent</button>
+
+  <p id="demo"></p>
+  <script>
+    function getInnerText() {
+      alert(document.getElementById("demo").innerText)
+    }
+
+    function getTextContent() {
+      alert(document.getElementById("demo").textContent)
+    }
+  </script>
+</body>
+</html>
