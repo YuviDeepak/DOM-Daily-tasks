@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product form</h1>
+
+        <div class="img tag">
+            <input type="text" id="image" placeholder="Enter the url of an image">
+            <span id="image_error" class="error"></span>
+        </div>
+
+
+        <div class="pro tag">
+            <input type="text" id="product" placeholder="Enter the product name">
+            <span id="product_error" class="error"></span>
+        </div>
+
+
+        <div class="cat tag">
+            <input type="text" id="category" placeholder="Enter the category">
+            <span id="category_error" class="error"></span>
+        </div>
+
+
+        <div class="pri tag">
+            <input type="number" id="price" placeholder="Enter the price">
+            <span id="price_error" class="error"></span>
+        </div>
+
+
+        <div class="sto tag">
+            <input type="number" id="stock" placeholder="Enter the stock">
+            <span id="stock_error" class="error"></span>
+        </div>
+
+
+        <div class="off tag">
+            <input type="number" id="offer" placeholder="Enter the offer">
+            <span id="offer_error" class="error"></span>
+        </div>
+
+        <button onclick="submit()">Submit</button>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
