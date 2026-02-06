@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="form">
+            <div class="tag">
+                <h1>Product form</h1>
+            </div>
+            <div class="tag">
+                <input id="image" placeholder="Enter the image url">
+                <span id="imer"></span>
+            </div>
+            <div class="tag">
+                <input id="product" placeholder="Enter the product name">
+                <span id="prer"></span>
+            </div>
+            <div class="tag">
+                <input id="category" placeholder="Enter the category">
+                <span id="caer"></span>
+            </div>
+            <div class="tag">
+                <input id="price" placeholder="Enter the price">
+                <span id="pier"></span>
+            </div>
+            <div class="tag">
+                <input id="stock" placeholder="Enter the amount of stock">
+                <span id="ster"></span>
+            </div>
+            <div class="tag">
+                <input id="offer" placeholder="Enter the offer">
+                <span id="ofer" ></span>
+            </div>
+            <div class="tag but">
+                <button onclick="submit()">hi</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let item = []
+
+        let submit = () => {
+
+            let fields = ["image", "product", "category", "price", "stock", "offer"]
+            let err = ["imer", "prer", "caer", "pier", "ster", "ofer"]
+            let obj = {}
+            let isValid = true
+
+            for (let i = 0; i < fields.length; i++) {
+
+                let input = document.getElementById(fields[i])
+                let er = document.getElementById(err[i])
+
+                if (input.value === "") {
+                    input.style.border = "1px solid red"
+                    
+                    if(fields[i] === "image"){
+                        er.innerText ="Fill the " + fields[i] + " url"
+                    }
+                    else{
+                        er.innerText ="Fill the " + fields[i] + " field"
+                    }
+                    isValid = false
+                } 
+                else {
+                    input.style.border = "1px solid black"
+                    er.innerText = ""
+                    obj[fields[i]] = input.value
+                }
+            }
+
+            if (isValid) {
+                item.push(obj)
+                console.log(item)
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
