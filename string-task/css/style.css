@@ -34,14 +34,7 @@
     text-align: center;
 }
 
-.container .box .name {
-    /* border: 10px solid; */
-    /* display: flex;
-    flex-direction: column; */
-    
 
-    
-}
 
 .container .box .name #error{
     margin-top: 10px;
@@ -83,10 +76,6 @@
 }
 
 
-
-.container .box .out{
-    /* border: 1px solid red; */
-}
 
 .container .box .out label{
     font-size: 1.2em;

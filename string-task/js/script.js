@@ -62,8 +62,12 @@ let submit = () => {
             n_count++
         }
 
-        else {
+        else if(letter!=32){
             sp_count++
+        }
+
+        else {
+            
         }
 
     }
