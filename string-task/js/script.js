@@ -81,7 +81,7 @@ let submit = () => {
     num_count.innerText = n_count
 
     //empty
-    uname.value = ""
+    // uname.value = ""
 
 
 
