@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box">
+            <div class="title">
+                <h1>String-Task</h1>
+            </div>
+            <div class="name">
+                <label for="uname">Enter your name :</label>
+                <input type="text" id="uname" >
+                <span id="error" style="color: white;"></span>
+                 <div class="but">
+                    <button onclick="submit()">submit</button>
+                 </div>
+            </div>
+            <div class="len out">
+                <label>Length of the name : </label>
+                <span id="name_length"></span>
+            </div>
+            <div class="caps out">
+                <label>Capital Letter Count : </label>
+                <span id="caps_count"></span>
+            </div>
+            <div class="small out">
+                <label>Small Letter Count : </label>
+                <span id="small_count"></span>
+            </div>
+            <div class="spl out">
+                <label>Special Character Count : </label>
+                <span id="spl_count"></span>
+            </div>
+            <div class="num out">
+                <label>Number Count : </label>
+                <span id="num_count"></span>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
